@@ -42,6 +42,7 @@ PRODUCT_COPY_FILES += \
 	vendor/motorola/jordan/lib/dsp/conversions.dll64P:system/lib/dsp/conversions.dll64P \
 	vendor/motorola/jordan/lib/dsp/h264vdec_sn.dll64P:system/lib/dsp/h264vdec_sn.dll64P \
 	vendor/motorola/jordan/lib/dsp/h264venc_sn.dll64P:system/lib/dsp/h264venc_sn.dll64P \
+	vendor/motorola/jordan/lib/dsp/h264ingdec_sn.dll64P:system/lib/dsp/h264ingdec_sn.dll64P \
 	vendor/motorola/jordan/lib/dsp/jpegdec_sn.dll64P:system/lib/dsp/jpegdec_sn.dll64P \
 	vendor/motorola/jordan/lib/dsp/jpegenc_sn.dll64P:system/lib/dsp/jpegenc_sn.dll64P \
 	vendor/motorola/jordan/lib/dsp/m4venc_sn.dll64P:system/lib/dsp/m4venc_sn.dll64P \
@@ -57,14 +58,12 @@ PRODUCT_COPY_FILES += \
 	vendor/motorola/jordan/lib/dsp/wbamrdec_sn.dll64P:system/lib/dsp/wbamrdec_sn.dll64P \
 	vendor/motorola/jordan/lib/dsp/wbamrenc_sn.dll64P:system/lib/dsp/wbamrenc_sn.dll64P \
 	vendor/motorola/jordan/lib/dsp/wmadec_sn.dll64P:system/lib/dsp/wmadec_sn.dll64P \
-	vendor/motorola/jordan/lib/dsp/720p_h264vdec_sn.dll64P:system/lib/dsp/720p_h264vdec_sn.dll64P \
 	vendor/motorola/jordan/lib/dsp/mpeg4ingenc_sn.dll64P:system/lib/dsp/mpeg4ingenc_sn.dll64P \
-	vendor/motorola/jordan/lib/dsp/h264ingdec_sn.dll64P:system/lib/dsp/h264ingdec_sn.dll64P \
 	vendor/motorola/jordan/lib/dsp/mpeg4ingdec_sn.dll64P:system/lib/dsp/mpeg4ingdec_sn.dll64P \
-	vendor/motorola/jordan/lib/dsp/720p_mp4vdec_sn.dll64P:system/lib/dsp/720p_mp4vdec_sn.dll64P \
-	vendor/motorola/jordan/lib/dsp/wmadec_sn.dll64P:system/lib/dsp/wmadec_sn.dll64P \
 	vendor/motorola/jordan/lib/dsp/720p_h264venc_sn.dll64P:system/lib/dsp/720p_h264venc_sn.dll64P \
+	vendor/motorola/jordan/lib/dsp/720p_h264vdec_sn.dll64P:system/lib/dsp/720p_h264vdec_sn.dll64P \
 	vendor/motorola/jordan/lib/dsp/720p_mp4venc_sn.dll64P:system/lib/dsp/720p_mp4venc_sn.dll64P \
+	vendor/motorola/jordan/lib/dsp/720p_mp4vdec_sn.dll64P:system/lib/dsp/720p_mp4vdec_sn.dll64P \
 	vendor/motorola/jordan/lib/dsp/wmv9dec_sn.dll64P:system/lib/dsp/wmv9dec_sn.dll64P \
 	vendor/motorola/jordan/lib/dsp/vpp_sn.dll64P:system/lib/dsp/vpp_sn.dll64P \
 	vendor/motorola/jordan/lib/egl/libEGL_POWERVR_SGX530_125.so:system/lib/egl/libEGL_POWERVR_SGX530_125.so \
@@ -83,11 +82,11 @@ PRODUCT_COPY_FILES += \
 
 #Moto etc
 PRODUCT_COPY_FILES += \
-        vendor/motorola/jordan/etc/firmware/wl1271.bin:system/etc/firmware/wl1271.bin \
-        vendor/motorola/jordan/etc/wifi/fw_tiwlan_ap.bin:system/etc/wifi/fw_tiwlan_ap.bin \
-        vendor/motorola/jordan/etc/wifi/fw_wlan1271.bin:system/etc/wifi/fw_wlan1271.bin \
-        vendor/motorola/jordan/etc/cameraCalFileDef5M.bin:system/etc/cameraCalFileDef5M.bin \
-        vendor/motorola/jordan/etc/mot_ise_imager_cfg.bin:system/etc/mot_ise_imager_cfg.bin \
+	vendor/motorola/jordan/etc/wifi/fw_tiwlan_ap.bin:system/etc/wifi/fw_tiwlan_ap.bin \
+	vendor/motorola/jordan/etc/wifi/fw_wlan1271.bin:system/etc/wifi/fw_wlan1271.bin \
+	vendor/motorola/jordan/etc/firmware/wl1271.bin:system/etc/firmware/wl1271.bin \
+	vendor/motorola/jordan/etc/cameraCalFileDef5M.bin:system/etc/cameraCalFileDef5M.bin \
+	vendor/motorola/jordan/etc/mot_ise_imager_cfg.bin:system/etc/mot_ise_imager_cfg.bin \
 	vendor/motorola/jordan/etc/motorola/ap_flex_version.txt:system/etc/motorola/ap_flex_version.txt \
 	vendor/motorola/jordan/etc/motorola/comm_drv/commdrv_fs.sh:system/etc/motorola/comm_drv/commdrv_fs.sh \
 	vendor/motorola/jordan/etc/motorola/comm_drv/mmins_cust_emergency_number.cfg:system/etc/motorola/comm_drv/mmins_cust_emergency_number.cfg \
