@@ -1,4 +1,4 @@
-# Copyright (C) 2011 The Android Open Source Project
+# Copyright (C) 2012 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -70,11 +70,11 @@ PRODUCT_COPY_FILES += \
 
 #Moto etc
 PRODUCT_COPY_FILES += \
-        $(vendor_path)/etc/firmware/wl1271.bin:system/etc/firmware/wl1271.bin \
-        $(vendor_path)/etc/wifi/fw_tiwlan_ap.bin:system/etc/wifi/fw_tiwlan_ap.bin \
-        $(vendor_path)/etc/wifi/fw_wlan1271.bin:system/etc/wifi/fw_wlan1271.bin \
-        $(vendor_path)/etc/cameraCalFileDef5M.bin:system/etc/cameraCalFileDef5M.bin \
-        $(vendor_path)/etc/mot_ise_imager_cfg.bin:system/etc/mot_ise_imager_cfg.bin \
+	$(vendor_path)/etc/firmware/wl1271.bin:system/etc/firmware/wl1271.bin \
+	$(vendor_path)/etc/wifi/fw_tiwlan_ap.bin:system/etc/wifi/fw_tiwlan_ap.bin \
+	$(vendor_path)/etc/wifi/fw_wlan1271.bin:system/etc/wifi/fw_wlan1271.bin \
+	$(vendor_path)/etc/cameraCalFileDef5M.bin:system/etc/cameraCalFileDef5M.bin \
+	$(vendor_path)/etc/mot_ise_imager_cfg.bin:system/etc/mot_ise_imager_cfg.bin \
 	$(vendor_path)/etc/motorola/ap_flex_version.txt:system/etc/motorola/ap_flex_version.txt \
 	$(vendor_path)/etc/motorola/comm_drv/commdrv_fs.sh:system/etc/motorola/comm_drv/commdrv_fs.sh \
 	$(vendor_path)/etc/motorola/comm_drv/mmins_cust_emergency_number.cfg:system/etc/motorola/comm_drv/mmins_cust_emergency_number.cfg \
@@ -170,7 +170,7 @@ PRODUCT_COPY_FILES += \
 	$(vendor_path)/app/FMRadioService.apk:system/app/FMRadioService.apk \
 	$(vendor_path)/app/MotoPhonePortal.apk:system/app/MotoPhonePortal.apk \
 	$(vendor_path)/app/AudioEffectSettings.apk:system/app/AudioEffectSettings.apk \
-	$(vendor_path)/app/CompassCalibrate.apk:system/app/CompassCalibrate.apk 
+	$(vendor_path)/app/CompassCalibrate.apk:system/app/CompassCalibrate.apk \
 
 #extra
 PRODUCT_COPY_FILES += \
