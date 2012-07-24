@@ -1,4 +1,4 @@
-# Copyright (C) 2012 The Android Open Source Project
+# Copyright (C) 2011 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -37,7 +37,6 @@ PRODUCT_COPY_FILES += \
 	$(vendor_path)/lib/libsoccamera.so:system/lib/libsoccamera.so \
 	$(vendor_path)/lib/libbayercamera.so:system/lib/libbayercamera.so \
 	$(vendor_path)/lib/libHPImgApi.so:system/lib/libHPImgApi.so \
-	$(vendor_path)/lib/hw/gralloc.omap3.so:system/lib/hw/gralloc.omap3.so \
 	$(vendor_path)/lib/hw/gps.jordan.so:system/lib/hw/gps.jordan.so \
 	$(vendor_path)/lib/dsp/baseimage.dof:system/lib/dsp/baseimage.dof \
 	$(vendor_path)/lib/dsp/conversions.dll64P:system/lib/dsp/conversions.dll64P \
@@ -146,6 +145,24 @@ PRODUCT_COPY_FILES += \
 	$(vendor_path)/etc/motorola/bp_nvm_default/generic_pds_init:system/etc/motorola/bp_nvm_default/generic_pds_init \
 	$(vendor_path)/etc/motorola/bp_nvm_default/File_UMA:system/etc/motorola/bp_nvm_default/File_UMA
 
+# TI SGX DDK 1.8 ES 5.x
+PRODUCT_COPY_FILES += \
+	$(vendor_path)/ti_sgx_es5.x/gralloc.omap3.so:/system/lib/hw/gralloc.omap3.so \
+	$(vendor_path)/ti_sgx_es5.x/libEGL_POWERVR_SGX530_125.so:/system/lib/egl/libEGL_POWERVR_SGX530_125.so \
+	$(vendor_path)/ti_sgx_es5.x/libGLESv1_CM_POWERVR_SGX530_125.so:/system/lib/egl/libGLESv1_CM_POWERVR_SGX530_125.so \
+	$(vendor_path)/ti_sgx_es5.x/libGLESv2_POWERVR_SGX530_125.so:/system/lib/egl/libGLESv2_POWERVR_SGX530_125.so \
+	$(vendor_path)/ti_sgx_es5.x/libpvr2d.so:/system/lib/libpvr2d.so \
+	$(vendor_path)/ti_sgx_es5.x/libeglinfo.so:/system/lib/libeglinfo.so \
+	$(vendor_path)/ti_sgx_es5.x/libusc.so:/system/lib/libusc.so \
+	$(vendor_path)/ti_sgx_es5.x/libglslcompiler.so:/system/lib/libglslcompiler.so \
+	$(vendor_path)/ti_sgx_es5.x/libpvrANDROID_WSEGL.so:/system/lib/libpvrANDROID_WSEGL.so \
+	$(vendor_path)/ti_sgx_es5.x/libsrv_um.so:/system/lib/libsrv_um.so \
+	$(vendor_path)/ti_sgx_es5.x/libIMGegl.so:/system/lib/libIMGegl.so \
+	$(vendor_path)/ti_sgx_es5.x/libsrv_init.so:/system/lib/libsrv_init.so \
+	$(vendor_path)/ti_sgx_es5.x/libPVRScopeServices.so:/system/lib/libPVRScopeServices.so \
+	$(vendor_path)/ti_sgx_es5.x/pvrsrvctl:/system/bin/pvrsrvctl \
+	$(vendor_path)/ti_sgx_es5.x/pvrsrvinit:/system/bin/pvrsrvinit \
+
 #bin
 PRODUCT_COPY_FILES += \
 	$(vendor_path)/bin/pvrsrvinit:system/bin/pvrsrvinit \
@@ -171,7 +188,7 @@ PRODUCT_COPY_FILES += \
 	$(vendor_path)/app/FMRadioService.apk:system/app/FMRadioService.apk \
 	$(vendor_path)/app/MotoPhonePortal.apk:system/app/MotoPhonePortal.apk \
 	$(vendor_path)/app/AudioEffectSettings.apk:system/app/AudioEffectSettings.apk \
-	$(vendor_path)/app/CompassCalibrate.apk:system/app/CompassCalibrate.apk \
+	$(vendor_path)/app/CompassCalibrate.apk:system/app/CompassCalibrate.apk
 
 #extra
 PRODUCT_COPY_FILES += \
